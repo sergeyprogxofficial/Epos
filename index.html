@@ -1,46 +1,86 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>V1</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="./logo.png">
-</head>
-<body>
-<div class="window hello">
-	<div class="container hello_cont">
-		<h1>Welcome to Epos!</h1><br>
-		<button class="close_hello_message">╳</button>
-	</div>
-</div>
-<div class="menu">
-	<ion-icon name="aperture-outline"></ion-icon>
-	<button class="music menu_el">
-		<ion-icon name="musical-notes-outline"></ion-icon>
-	</button>
-	<button class="explorer menu_el">
-		<ion-icon name="folder-outline"></ion-icon>
-	</button>
-	<button class="console menu_el">
-		<ion-icon name="terminal-outline"></ion-icon>
-	</button>
-</div>
-<div class="edit">
-	<button>
-		<ion-icon name="logo-html5"></ion-icon>
-	</button>
-	<button>
-		<ion-icon name="logo-css3"></ion-icon>
-	</button>
-	<button>
-		<ion-icon name="logo-javascript"></ion-icon>
-	</button>
-</div>
-<script type="text/javascript" src="script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Epos Hello!</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img{
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px){
+        .bd-placeholder-img-lg{
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="epos.png" width="55px">
+        <span class="fs-4">EPOS</span>
+      </a>
+    </header>
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Начните работу с Epos прямо сейчас</h1>
+        <p class="col-md-8 fs-4">Уникальная операционная система. <br>Устанавливается в качестве дополнительной. <br>Ещё не готова.</p>
+        <button class="btn btn-primary btn-lg" type="button">Начать работу</button>
+      </div>
+    </div>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Доделывайте её сами</h2>
+          <p>Знакомы с html/css/javascript?<br>Доведите Epos до вашего идеала!<br>Не умеете пользоваться html/css/javascript?<br>Для вас есть удобный редактор.</p>
+          <button class="btn btn-outline-light" type="button"><h2>faq</h2></button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Есть много игр</h2>
+          <p>Вы можете играть в игры в режиме web_play не устанавлвая их на пк. <br>
+            Есть магазин, где можно скачать сотни игр. <br>
+            Есть стандартно установленные игры. <br>
+            Вы можете написать свою игру на python.
+          </p>
+          <button class="btn btn-outline-secondary" type="button"><h2>faq</h2></button>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2023
+    </footer>
+  </div>
+</main>
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://epos-2.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script id="dsq-count-scr" src="//epos-2.disqus.com/count.js" async></script>
+  </body>
 </html>
